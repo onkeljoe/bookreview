@@ -3,7 +3,7 @@ bookreview
 
 This is my first try on my very own wordpress theme, derived from _s and hand-crafted while learning about wordpress and modern php back in 2018. Finally uploaded to github in 2024.
 
-This theme makes use of the **Advanced Custom Fields** wordpress plugin. 
+This theme makes use of the **Advanced Custom Fields** and **Custom Post Type** wordpress plugins. 
 
 Maybe the look-and-feel is not up to date, but I'm proud I did every line of the css from scratch. So while this theme may be used by other wordpress users (as long as you keep reference to me), it may not meet your expectations, as it was strictly tailor-made for my own blog page.
 
