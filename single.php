@@ -13,21 +13,31 @@ while ( have_posts() ) : the_post(); ?>
 		<main id="main" class="site-main">
 
 			<article id="post-<?php the_ID(); ?>">
-				<section <?php post_class(); ?>>
+				<!-- <section <?//php post_class(); ?>> -->
+				<div <?php post_class(); ?>>
 
-					<?php bookreview_entry_title(); ?>
+				<?php if ( 'book' === get_post_type() ) : ?>
+					<?php the_title( '<h1 class="entry-title-top">', '</h1>' ); ?>
+				<?php else : ?>
+					<p>&nbsp;</p>
+				<?php endif; ?>
 					<header class="entry-bookcard clear">
 						<?php bookreview_post_thumbnail(); ?>
 						<?php bookreview_comments_badge(); ?>
 						<div class="entry-meta">
-							<p><?php bookreview_book_shortinfo(); ?></p>
+							<?php if ( 'book' === get_post_type() ) : ?>
+								<p><?php bookreview_book_shortinfo(); ?></p>
+							<?php else : ?>
+								<?php bookreview_entry_title(); ?>
+							<?php endif; ?>
 						</div>
 					</header><!-- .entry-header -->
-
+		
 					<div class="entry-content">
 						<?php bookreview_entry_content(); ?>
 					</div><!-- .entry-content -->
-				</section>
+				<!-- </section> -->
+				</div>
                 <?php if ( 'book' === get_post_type() ) : ?>
                     <section class="entry-data">
                         <?php bookreview_book_datatable(); ?>
@@ -48,21 +58,21 @@ while ( have_posts() ) : the_post(); ?>
 	</div><!-- #primary -->
 	<aside id="meta-sidebar" class="widget-area">
 		<section class="meta-widget">
-			<h2><?php _e( 'Posted by' ); ?></h2>
+			<h2><?php _e( 'Posted by', 'bookreview' ); ?></h2>
 			<figure class="user-thumbnail">
 				<?php bookreview_user_thumbnail(); ?>
-				<figcaption><?php the_author(); ?></figcaption>
+				<figcaption><?php the_author(); ?><br><?php the_date(); ?></figcaption>
 			</figure>
 		</section>
 		<!-- If Rating exists, show widget -->
 		<?php if ( get_post_meta( get_the_ID(), 'rating_percentage', true) ) : ?>
 			<section class="meta-widget">
-				<h2><?php _e( 'Rating' ); ?></h2>
+				<h2><?php _e( 'Rating', 'bookreview' ); ?></h2>
 				<?php bookreview_rating(); ?>
 			</section>
 		<?php endif; ?>
 		<section class="meta-widget social">
-			<h2><?php _e( 'Share this post' ); ?></h2>
+			<h2><?php _e( 'Share this post', 'bookreview' ); ?></h2>
 			<p>
 				<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo esc_url( get_permalink() ); ?>" target="_blank">
 					<i class="fab fa-facebook-square facebook"></i> Facebook
@@ -75,18 +85,22 @@ while ( have_posts() ) : the_post(); ?>
 			</p>
 		</section>
 		<section class="meta-widget">
-			<h2><i class="far fa-folder-open"></i> <?php _e( 'Category' ); ?></h2>
+			<h2><i class="far fa-folder-open"></i> <?php _e( 'Category', 'bookreview' ); ?></h2>
 			<?php the_category( '', 'single' ); ?>
 		</section>
 		<section class="meta-widget">
-			<h2><i class="fas fa-tags"></i> <?php _e( 'Tagged with' ); ?></h2>
+			<h2><i class="fas fa-tags"></i> <?php _e( 'Tagged with', 'bookreview' ); ?></h2>
 			<?php the_tags( '<ul><li>', '</li><li>', '</li></ul>' ); ?>
 		</section>
 		<section class="meta-widget">
 			<h2><?php _e( 'Recent Posts' ); ?></h2>
 			<ul>
 			<?php
-				$args = array( 'numberposts' => '5' );
+				$args = array( 
+					'post_type' => array('post','book'),
+					'post_status' => 'publish',
+					'numberposts' => '5' 
+				);
 				$recent_posts = wp_get_recent_posts( $args );
 				foreach( $recent_posts as $recent ){
 					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';

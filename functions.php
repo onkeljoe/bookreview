@@ -120,7 +120,7 @@ add_action( 'wp_enqueue_scripts', 'bookreview_scripts' );
  * Add custom post type 'book' to default and archive posts query
  */
 function bookreview_add_books_to_query( $query ) {
-	if ( $query->is_main_query() ) {
+	if ( $query->is_main_query() && ( ! $query->is_admin ) ) {
 		if ( $query->is_home() || $query->is_archive() )
 			$query->set( 'post_type', array( 'post', 'book' ) );
 	}
