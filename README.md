@@ -1,4 +1,15 @@
-[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
+bookreview
+==========
+
+This is my first try on my very own wordpress theme, derived from _s and hand-crafted while learning about wordpress and modern php.
+
+This theme makes use of the **Advanced Custom Fields** wordpress plugin. 
+
+Maybe the look-and-feel is not up to date, but I'm proud I did every line of the css from scratch. So while this theme may be used by other wordpress users (as long as you keep reference to me), it may not meet your expectations, as it was strictly tailor-made for my own blog page.
+
+View results at [Joe's Blog](https://onkeljoe.de/ "Joe's Blog").
+
+Now view the template's readme:
 
 _s
 ===
