@@ -1,7 +1,7 @@
 bookreview
 ==========
 
-This is my first try on my very own wordpress theme, derived from _s and hand-crafted while learning about wordpress and modern php.
+This is my first try on my very own wordpress theme, derived from _s and hand-crafted while learning about wordpress and modern php back in 2018. Finally uploaded to github in 2024.
 
 This theme makes use of the **Advanced Custom Fields** wordpress plugin. 
 
