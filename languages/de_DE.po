@@ -1,0 +1,275 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Book Review\n"
+"POT-Creation-Date: 2018-10-26 15:58+0200\n"
+"PO-Revision-Date: 2018-10-26 15:58+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Entschuldigung! Diese Seite kann nicht gefunden werden."
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Hier wurde leider kein Inhalt gefunden! Versuchen Sie einer der unten "
+"aufgeführten Links oder benutzen Sie unser Suchfeld."
+
+#: 404.php:32
+msgid "Most Used Categories"
+msgstr "Meist verwendete Kategorien"
+
+#. translators: %1$s: smiley
+#: 404.php:48
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Versuchen Sie es mal in den Monatsarchiven. %1$s"
+
+#. translators: 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Ein Kommentar zu &ldquo;%1$s&rdquo;"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s Kommentar zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:19
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Betrieben mit %s"
+
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:25
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s von %2$s."
+
+#: functions.php:31
+msgid "Head Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:32
+msgid "Foot Menu"
+msgstr "Fußmenü"
+
+#: functions.php:91
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: functions.php:93
+msgid "Add widgets here."
+msgstr "Widgets hinzufügen."
+
+#: header.php:23
+msgid "Skip to content"
+msgstr "Springe zum Inhalt"
+
+#. translators: %s: post date.
+#: inc/template-tags.php:27
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Veröffentlicht am %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:42
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "von %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:57
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:60
+msgid "Posted in "
+msgstr "Kategorie: "
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:73
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:76
+msgid "Tagged "
+msgstr "Schlagwörter: "
+
+#. translators: %s: post title
+#: inc/template-tags.php:96
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"Schreibe einen Kommentar<span class=\"screen-reader-text\"> zu %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:113 template-parts/content-page.php:37
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Bearbeiten <span class=\"screen-reader-text\">von %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:245
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Weiterlesen<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: inc/template-tags.php:259 template-parts/content-page.php:24
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: inc/template-tags.php:273 inc/template-tags.php:301
+msgid "title"
+msgstr "Titel"
+
+#: inc/template-tags.php:274 inc/template-tags.php:302
+msgid "author"
+msgstr "Autor"
+
+#: inc/template-tags.php:296
+msgid "pages"
+msgstr "Seiten"
+
+#: inc/template-tags.php:304
+msgid "translator"
+msgstr "Übersetzer"
+
+#: inc/template-tags.php:307
+msgid "isbn"
+msgstr "ISBN"
+
+#: inc/template-tags.php:310
+msgid "published"
+msgstr "Veröffentlicht"
+
+#: inc/template-tags.php:313
+msgid "originally published"
+msgstr "Originalausgabe"
+
+#: inc/template-tags.php:316
+msgid "edition"
+msgstr "Auflage"
+
+#: inc/template-tags.php:319
+msgid "format"
+msgstr "Format"
+
+#: inc/template-tags.php:322
+msgid "Dewey classification"
+msgstr "Dewey-Klassifikation"
+
+#. translators: %s: search query.
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: single.php:51
+msgid "Posted by"
+msgstr "Beitrag von"
+
+#: single.php:60
+msgid "Rating"
+msgstr "Bewertung"
+
+#: single.php:65
+msgid "Share this post"
+msgstr "Diesen Beitrag teilen"
+
+#: single.php:78
+msgid "Category"
+msgstr "Kategorie"
+
+#: single.php:82
+msgid "Tagged with"
+msgstr "Schlagwörter:"
+
+#: single.php:86
+msgid "Recent Posts"
+msgstr "Aktuelle Beiträge"
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr "Leider nichts gefunden"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:22
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bereit, deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Beginne "
+"hier</a>."
+
+#: template-parts/content-none.php:35
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Leider gab es keine Treffer für deinen Suchbegriff. Bitte versuche eine "
+"andere Suche."
+
+#: template-parts/content-none.php:42
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Scheinbar können wir nicht finden, was Du sehen wolltest. Vielleicht kann "
+"eine Suche helfen."
+
+#. Theme Name of the plugin/theme
+msgid "Book Review"
+msgstr "Buchrezension"
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me/"
+
+#. Description of the plugin/theme
+msgid "Theme for media centered blogs"
+msgstr "Theme für medienbezogene Blogs"
+
+#. Author of the plugin/theme
+msgid "Johannes Heinemann"
+msgstr "Johannes Heinemann"
+
+#. Author URI of the plugin/theme
+msgid "https://onkeljoe.de"
+msgstr "https://onkeljoe.de"
+
+#~ msgid "https://wordpress.org/"
+#~ msgstr "https://wordpress.org/"
