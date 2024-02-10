@@ -336,6 +336,7 @@ if ( ! function_exists( 'bookreview_rating' ) ) :
 			return;
 		}
 		$rating 		= get_field('rating_percentage');
+		$rating			= $rating - ($rating%10);
 		$half 			= $rating%20;
 		$full 			= ($rating-$half)/20;
 		$half 			= $half>0 ? 1 : 0;
@@ -351,7 +352,7 @@ if ( ! function_exists( 'bookreview_rating' ) ) :
 		for ($i=0; $i < $empty; $i++) { 
 			$ratingstars .= '<i class="far fa-star"></i>';
 		} ?>
-		<div class="review">
+		<div class="rating">
 			<p><?php echo $ratingstars; ?></p>
 		</div>
 	<?php }
